@@ -13,6 +13,7 @@ RUN set -x \
         rsync \
  && update-ca-certificates \
  && pip install pydrive==1.3.1 \
+ && pip install dropbox==8.1.0 \
  && apk del --purge py-pip \
  && adduser -D -u 1896 duplicity \
  && mkdir -p /home/duplicity/.cache/duplicity \
